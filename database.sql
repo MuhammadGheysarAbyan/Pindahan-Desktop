@@ -433,6 +433,7 @@ INSERT INTO `shipping_rates` (`id`, `wilayah`, `cost_per_kg`) VALUES
 CREATE TABLE `transaksi` (
   `id` int(11) NOT NULL,
   `kode_transaksi` varchar(20) NOT NULL,
+  `nama_pelanggan` varchar(100) DEFAULT 'Guest',
   `customer_id` int(11) DEFAULT NULL,
   `kasir_id` int(11) DEFAULT NULL,
   `total` decimal(12,2) NOT NULL,
